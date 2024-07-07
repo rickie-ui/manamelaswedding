@@ -23,12 +23,45 @@
     background-color: #000000;
   }
   .schedule-container {
-    background-color: #535555;
+    background-color: #28282B
+    ;
   }
   .name{
     color: var(--Heading-color);    
   }
   .Footer {
     background-color: var(--Heading-color);
+    color: var(--text-color);
     width: full;
+  }
+  .inspiration-btn{
+    margin-left: 45rem;
+  }
+  @media screen and ( max-width : 640px) {  
+  .btn-acc {
+      margin-left: 6rem ;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+  }
+  .btn-accom {
+    margin-left: 4rem ;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.alt-para {
+  margin-left:3rem ;
+}
+.inspiration-btn{
+  margin-right: 0rem !important;
+}
+.sched-btn {
+  margin-left: 4rem;
+  margin-top: 2rem;
+} 
+.text-2nd{
+ margin-top: 2rem;
+}
+.text-3rd {
+  
+}
   }
