@@ -18,7 +18,7 @@ const Story = () => {
         Dress to impress, like paparazzi is going to snap you because its your event too! Kindly see link for inspiration.
         </p>
         <button className="btn btn-primary inspiration-btn  text-white rounded-md p-4 flex  items-center  hover:bg-white hover:text-black hover:text-bold translate-x-2">
-          <a href="https://za.pinterest.com/ntshepim/the-mans-wedding/?invite_code=703b572d6f284815925b0a86bce53421&sender=200410389576424756">
+          <a href="https://za.pinterest.com/ntshepim/the-mans-wedding/?invite_code=703b572d6f284815925b0a86bce53421&sender=200410389576424756" target="_blank">
           Get Inspiration
           </a>
         </button>
