@@ -37,7 +37,44 @@
   .inspiration-btn{
     margin-left: 45rem;
   }
+  .video-responsive {
+    margin-top: 6rem;
+    position: relative;
+    padding-top: 26.25%; /* 16:9 aspect ratio */
+    height: 15rem;
+    overflow: hidden;
+    max-width: 100%;
+    background: black; /* Ensures no white space around the video */
+  }
+  
+  .video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 25rem;
+    width: 50rem;
+    height: 30rem;
+    border: 0;
+  }
+
   @media screen and ( max-width : 640px) {  
+    .video-responsive {
+      margin-top: 3rem;
+      position: relative;
+      padding-top: 26.25%; /* 16:9 aspect ratio */
+      height: 15rem;
+      overflow: hidden;
+      max-width: 100%;
+      background: black; /* Ensures no white space around the video */
+    }
+    
+    .video-responsive iframe {
+      position: absolute;
+      top: 0;
+      left: 1rem;
+      width: 25rem;
+      height: 20rem;
+      border: 0;
+    }
   .btn-acc {
       margin-left: 6rem ;
       margin-top: 1rem;
