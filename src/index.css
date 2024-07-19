@@ -11,6 +11,7 @@
   }
   .Heading {
     color: var(--Heading-color);
+    padding-bottom: 3rem;
   }
   .accommodation {
     background-color: var(--secondbackground);
@@ -55,13 +56,81 @@
     height: 30rem;
     border: 0;
   }
+  .registry-link img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .registry-link img:hover {
+    transform: scale(1.05);
+  }
+
+  /*styling the timeline schedule*/
+ 
+.timeline {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding-top: 4rem;
+  margin-left: 180px; /* Add margin to make space for the timeline dots and lines */
+}
+
+.timeline-event {
+  display: flex;
+  align-items: center;
+  margin: 40px 0; /* Increase margin to create space between events */
+  position: relative;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #d4b061; 
+  border-radius: 50%;
+  position: absolute;
+  left: -40px; /* Position dot relative to the timeline */
+  top: 2;
+}
+.registry-heading{
+color: #d4b061; 
+
+}
+.timeline-line {
+  width: 2px;
+  position: absolute;
+  left: -34px; /* Align the line with the dot */
+  top: -20px;
+  bottom: -20px;
+  z-index: -1;
+  font-size:18px ;
+}
+
+.timeline-time {
+  color: #d4b061; /* Match the yellow color */
+  font-size: 18px;
+  width: 50px;
+  right: 4rem;
+}
+
+.timeline-description {
+  left: 2rem;
+  color: white;
+  font-size: 16px;
+  margin-left: 20px;
+  font-size:18px ;
+}
+
 
   @media screen and ( max-width : 640px) {  
     .video-responsive {
       margin-top: 3rem;
       position: relative;
       padding-top: 26.25%; /* 16:9 aspect ratio */
-      height: 15rem;
+      height: 18rem;
       overflow: hidden;
       max-width: 100%;
       background: black; /* Ensures no white space around the video */
@@ -99,6 +168,15 @@
  margin-top: 2rem;
 }
 .text-3rd {
-  
+  font-size: 1.4rem;
+}
+.timeline {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding-top: 4rem;
+  margin-left: 40px; /* Add margin to make space for the timeline dots and lines */
 }
   }
