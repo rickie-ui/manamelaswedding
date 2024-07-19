@@ -9,9 +9,9 @@ const Story = () => {
        <YoutubeEmbed embedId="KA_-rmowqa8" />
     </div>
      </div>
-      <div className="Container-theme pt-10 pb-10 block justify-center">
-        <h2 className="Heading 2xl pt-10 flex justify-center text-3xl sm:pb-4"> Theme</h2>
-        <p className="md:pt-10 md:text-2xl flex md:p-20 sm:p-10 pb-8"> 
+      <div className="Container-theme pt-10 pb-8 block justify-center">
+        <h2 className="Heading  text-4xl pt-10 flex justify-center sm:pb-4 sm:pt-8"> Theme</h2>
+        <p className="md:pt-10 md:text-2xl flex md:p-20 sm:p-10 pb-8 p-3 text-3rd"> 
         All black formal event(Black Tie). Ladies are encouraged to wear black formal 
         dresses or 2-piece sets (formal pants are allowed). Gents are strictly required
         to wear a black suit, with a white shirt(tie is optional and if worn, must be black).
