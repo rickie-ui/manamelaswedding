@@ -2,7 +2,7 @@ import YoutubeEmbed from "../components/YoutubeEmbed";
 
 const Story = () => {
   return (
-     <div className="Container-fluid  w-full h-auto md:pt-5 md:pb-2 bg-black text-white">
+     <div className="Container-fluid  w-full h-auto md:pt-5 bg-black text-white">
       <h1 className="Heading text-4xl flex font-medium justify-center"> Our Story</h1>
      <div className="container flex justify-center">
      <div className="w-full h-auto bg-black text-white">
