@@ -4,12 +4,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './pages/Home.jsx';
 import Story from './pages/Story.jsx';
-import Navbar from './components/Navbar.jsx';
+import Navbar from './shared/Navbar.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Accommodation from './pages/Accomodation.jsx';
 import Registry from './pages/Registry.jsx';
 import Schedule from './pages/Schedule.jsx';
-
 
 const router = createBrowserRouter([
   {
