@@ -43,7 +43,7 @@ const Navbar = () => {
             className={({ isActive }) => (isActive ? 'text-[#C3AC5B]' : '')}
             to={`accomodation`}
           >
-            Accomodation
+            Accommodation
           </NavLink>
           <NavLink
             className={({ isActive }) => (isActive ? 'text-[#C3AC5B]' : '')}
@@ -122,7 +122,7 @@ const Navbar = () => {
               }
               onClick={() => setIsMenuToggled(false)}
             >
-              Accomodation
+              Accommodation
             </NavLink>
             <NavLink
               to={'gallery'}
