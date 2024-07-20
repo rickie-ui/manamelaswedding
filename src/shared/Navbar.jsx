@@ -92,7 +92,7 @@ const Navbar = () => {
               Home
             </NavLink>
             <NavLink
-              to={story}
+              to={'story'}
               className={({ isActive }) =>
                 `w-full py-2 hover:text-[#C3AC5B] ${
                   isActive ? 'text-[#C3AC5B]' : ''
