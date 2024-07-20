@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './pages/Home.jsx';
 import Story from './pages/Story.jsx';
+import Gallery from './pages/Gallery.jsx';
 import Navbar from './shared/Navbar.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Accommodation from './pages/Accomodation.jsx';
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'gallery',
-        element: <Accommodation />,
+        element: <Gallery />,
       },
       {
         path: 'registry',
