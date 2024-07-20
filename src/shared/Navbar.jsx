@@ -1,4 +1,4 @@
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, NavLink } from 'react-router-dom';
 import Footer from '../shared/Footer';
 import { useState } from 'react';
 import { useMediaQuery } from '@uidotdev/usehooks';
@@ -21,12 +21,42 @@ const Navbar = () => {
 
       {!isSmallDevice ? (
         <nav className='flex w-8/12 mx-auto items-center py-6 gap-14 justify-center text-lg uppercase font-title'>
-          <Link to={`/`}>Home</Link>
-          <Link to={`story`}>Our Story</Link>
-          <Link to={`Schedule`}>Schedule</Link>
-          <Link to={`Accomodation`}>Accomodation</Link>
-          <Link to={`Accomodation`}>Gallery</Link>
-          <Link to={`Registry`}>Registry</Link>
+          <NavLink
+            className={({ isActive }) => (isActive ? 'text-[#C3AC5B]' : '')}
+            to={`/`}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? 'text-[#C3AC5B]' : '')}
+            to={`story`}
+          >
+            Our Story
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? 'text-[#C3AC5B]' : '')}
+            to={`schedule`}
+          >
+            Schedule
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? 'text-[#C3AC5B]' : '')}
+            to={`accomodation`}
+          >
+            Accomodation
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? 'text-[#C3AC5B]' : '')}
+            to={`gallery`}
+          >
+            Gallery
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? 'text-[#C3AC5B]' : '')}
+            to={`registry`}
+          >
+            Registry
+          </NavLink>
         </nav>
       ) : (
         <div className='flex items-center justify-end  px-2'>
@@ -50,48 +80,72 @@ const Navbar = () => {
           {/* menu items */}
 
           <div className='flex flex-col items-center  text-center gap-4 text-base text-white/60 font-title uppercase'>
-            <a
-              href='#'
-              className='w-full py-2 hover:text-[#C3AC5B]'
+            <NavLink
+              to={'/'}
+              className={({ isActive }) =>
+                `w-full py-2 hover:text-[#C3AC5B] ${
+                  isActive ? 'text-[#C3AC5B]' : ''
+                }`
+              }
               onClick={() => setIsMenuToggled(false)}
             >
               Home
-            </a>
-            <a
-              href='#'
-              className='w-full py-2 hover:text-[#C3AC5B]'
+            </NavLink>
+            <NavLink
+              to={story}
+              className={({ isActive }) =>
+                `w-full py-2 hover:text-[#C3AC5B] ${
+                  isActive ? 'text-[#C3AC5B]' : ''
+                }`
+              }
               onClick={() => setIsMenuToggled(false)}
             >
               Our Story
-            </a>
-            <a
-              href='#'
-              className='w-full py-2 hover:text-[#C3AC5B]'
+            </NavLink>
+            <NavLink
+              to={'schedule'}
+              className={({ isActive }) =>
+                `w-full py-2 hover:text-[#C3AC5B] ${
+                  isActive ? 'text-[#C3AC5B]' : ''
+                }`
+              }
               onClick={() => setIsMenuToggled(false)}
             >
               Schedule
-            </a>
-            <a
-              href='#'
-              className='w-full py-2 hover:text-[#C3AC5B]'
+            </NavLink>
+            <NavLink
+              to={'accomodation'}
+              className={({ isActive }) =>
+                `w-full py-2 hover:text-[#C3AC5B] ${
+                  isActive ? 'text-[#C3AC5B]' : ''
+                }`
+              }
               onClick={() => setIsMenuToggled(false)}
             >
               Accomodation
-            </a>
-            <a
-              href='#'
-              className='w-full py-2 hover:text-[#C3AC5B]'
+            </NavLink>
+            <NavLink
+              to={'gallery'}
+              className={({ isActive }) =>
+                `w-full py-2 hover:text-[#C3AC5B] ${
+                  isActive ? 'text-[#C3AC5B]' : ''
+                }`
+              }
               onClick={() => setIsMenuToggled(false)}
             >
               Gallery
-            </a>
-            <a
-              href='#'
-              className='w-full py-2 hover:text-[#C3AC5B]'
+            </NavLink>
+            <NavLink
+              to={'registry'}
+              className={({ isActive }) =>
+                `w-full py-2 hover:text-[#C3AC5B] ${
+                  isActive ? 'text-[#C3AC5B]' : ''
+                }`
+              }
               onClick={() => setIsMenuToggled(false)}
             >
               Registry
-            </a>
+            </NavLink>
           </div>
         </div>
       )}
