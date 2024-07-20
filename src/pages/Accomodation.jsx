@@ -15,8 +15,8 @@ const Accommodation = () => {
         </a>
         </button>
         </div>
-        <div className="grid-item 2nd-grid  md:pt-0 sm:pt-10 "> 
-        <p className="text-xl color-white pb-6 pt-4 text-white md:p-4 alt-para">
+        <div className="grid-item 2nd-grid  md:pt-0 sm:pt-10 mb-4 "> 
+        <p className="text-xl color-white mb-4 pt-4 text-white md:p-4 alt-para">
         Alternatively, you can book on Airbnb at any place near or surrounding the venue.
         </p>
         <button className="btn btn-primary bg-black btn-acc text-white rounded-md p-4 items-center text-bold md:ml-40  hover:bg-white hover:text-black hover:text-bold translate-x-2">
