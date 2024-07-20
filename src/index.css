@@ -21,6 +21,7 @@
   .btn-primary {
     background-color: var(--Heading-color);
     font-weight: bold;
+    padding: 8px 18px;
   }
   .Acc {
     background-color: #000000;
