@@ -39,13 +39,15 @@
     width: full;
   }
   .inspiration-btn{
-    margin-left: 45rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
   }
   .video-responsive {
     margin-top: 6rem;
     position: relative;
     padding-top: 26.25%; /* 16:9 aspect ratio */
-    height: 15rem;
+    height: 25rem;
     overflow: hidden;
     max-width: 100%;
     background: black; /* Ensures no white space around the video */
@@ -55,7 +57,7 @@
     position: absolute;
     top: 0;
     left: 25rem;
-    width: 50rem;
+    width: 40rem;
     height: 30rem;
     border: 0;
   }
@@ -65,13 +67,10 @@
     cursor: pointer;
     transition: transform 0.3s ease;
   }
-  
   .registry-link img:hover {
     transform: scale(1.05);
   }
-
   /*styling the timeline schedule*/
- 
 .timeline {
   padding: 15px;
   display: flex;
@@ -160,9 +159,7 @@ color: #d4b061;
 .alt-para {
   margin-left:3rem ;
 }
-.inspiration-btn{
-  margin-right: 50rem !important;
-}
+
 .sched-btn {
   margin-left: 4rem;
   margin-top: 2rem;
