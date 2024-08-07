@@ -42,7 +42,7 @@ const Navbar = () => {
         <h3>September 24, Pretoria East</h3>
         <h3>#AbeyWedsCarol</h3>
       </div>
-      <h3 className=' text-4xl lg:text-5xl text-center my-4 title'>
+      <h3 className=' text-4xl lg:text-5xl text-center font-bold my-4 title'>
         Carol & Abey
       </h3>
 
