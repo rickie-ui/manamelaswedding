@@ -1,14 +1,17 @@
 import YoutubeEmbed from '../components/YoutubeEmbed';
 
-const Story = () => {
+const Story = ({ id }) => {
   return (
-    <div className='Container-fluid w-full h-auto md:pt-5 py-6 bg-black text-white'>
+    <div
+      className='w-full h-auto md:pt-5 py-6  bg-[#FBF8F2] text-black'
+      id={id}
+    >
       <h1 className='Heading text-4xl flex font-medium justify-center'>
         {' '}
         Our Story
       </h1>
       <div className='container flex justify-center'>
-        <div className='w-full h-auto bg-black text-white'>
+        <div className='w-full h-auto -mt-24   text-black'>
           <YoutubeEmbed embedId='KA_-rmowqa8' />
         </div>
       </div>

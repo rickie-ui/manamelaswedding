@@ -24,7 +24,7 @@
     padding: 8px 18px;
   }
   .Acc {
-    background-color: #000000;
+    color: #000000;
   }
   .schedule-container {
     background-color: #28282B
@@ -50,7 +50,7 @@
     height: 25rem;
     overflow: hidden;
     max-width: 100%;
-    background: black; /* Ensures no white space around the video */
+     /* Ensures no white space around the video */
   }
   
   .video-responsive iframe {
@@ -120,7 +120,7 @@ color: #d4b061;
 
 .timeline-description {
   left: 2rem;
-  color: white;
+  color: black;
   font-size: 16px;
   margin-left: 20px;
   font-size:18px ;

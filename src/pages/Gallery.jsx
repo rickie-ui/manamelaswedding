@@ -1,77 +1,84 @@
+import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const Gallery = () => {
-  // add images here
+const Gallery = ({ id }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
   const projectImages = [
-    { id: 1, path: '/src/Images/hero.jpg' },
-    { id: 2, path: '/src/Images/flower.jpg' },
-    { id: 3, path: '/src/Images/f1.jpg' },
+    {
+      id: 1,
+      path: 'https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80',
+      title: 'Bunker',
+    },
+    {
+      id: 2,
+      path: 'https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80',
+      title: 'Words Remain',
+    },
+    {
+      id: 3,
+      path: 'https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60',
+      title: 'Falling Out',
+    },
   ];
 
-  const detailSettings = {
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    autoplay: true,
-    autoplaySpeed: 2500,
-  };
-
-  const stripSettings = {
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    arrows: false,
+  const settings = {
     dots: false,
     infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     centerMode: true,
+    centerPadding: '20%',
     focusOnSelect: true,
+    beforeChange: (current, next) => setCurrentSlide(next),
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerPadding: '10%',
+        },
+      },
+    ],
   };
 
   return (
-    <div className="py-12 bg-[#222] font-['Josefin_Slab']">
-      <h2 className='text-5xl text-center text-white mb-5 font-italiano'>
-        Forever and Always
-      </h2>
-      <small className='block text-center font-title text-white text-lg opacity-50 mb-12'>
-        Capturing timeless moments
-        <br />
-        of love and tradition.
-      </small>
-      <div className='relative py-12'>
-        <div className='my-[150px] blur-[10px]'>
-          <Slider {...stripSettings}>
-            {projectImages.map((image) => (
-              <div key={image.id} className='cursor-pointer'>
+    <div
+      className='w-full max-w-4xl mx-auto h-screen flex flex-col justify-center items-center p-4'
+      id={id}
+    >
+      <h1 className='flex justify-center pt-8 Heading text-4xl'>Gallery</h1>
+      <div className="font-['Josefin_Slab']">
+        <small className='block text-center font-title -mt-10 text-black text-lg  mb-12'>
+          Capturing timeless moments of love <br />
+          and tradition.
+        </small>
+      </div>
+
+      <div className='w-full relative mb-8'>
+        <Slider {...settings}>
+          {projectImages.map((image, index) => (
+            <div key={image.id} className='px-2'>
+              <div
+                className={`transition-all duration-500 ease-in-out ${
+                  index === currentSlide
+                    ? 'opacity-100 scale-100 blur-none'
+                    : 'opacity-40 scale-75 blur-sm'
+                }`}
+              >
                 <img
-                  src={console.log(image.path)}
+                  src={image.path}
                   alt={`Project ${image.id}`}
-                  className='max-w-full w-full h-auto'
+                  className='w-full h-96 object-cover rounded-lg shadow-lg transition-all duration-500 ease-in-out'
                 />
               </div>
-            ))}
-          </Slider>
-        </div>
-        <div className='w-[768px] h-[451px] absolute inset-0 m-auto'>
-          <div className='absolute left-0 right-0 w-[578px] h-[361px] mt-8 mx-auto z-10 bg-[#333] overflow-hidden'>
-            <Slider {...detailSettings}>
-              {projectImages.map((image) => (
-                <div key={image.id}>
-                  <img
-                    src={image.path}
-                    alt={`Project ${image.id}`}
-                    className='max-w-full object-cover object-center w-full h-auto'
-                  />
-                </div>
-              ))}
-            </Slider>
-          </div>
-          <div
-            className='absolute w-[768px] h-[451px] bg-no-repeat'
-            style={{ backgroundImage: "url('/Images/mrprice.png')" }}
-          ></div>
-        </div>
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );

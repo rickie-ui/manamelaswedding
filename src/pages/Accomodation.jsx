@@ -1,12 +1,12 @@
-const Accommodation = () => {
+const Accommodation = ({ id }) => {
   return (
-    <div className='Acc h-auto pb-10 md:w-7/12 w-full mx-auto'>
-      <h1 className='flex justify-center pt-8 Heading text-4xl pb-6 text-white'>
+    <div className='Acc h-auto pb-10 md:w-7/12 w-full mx-auto' id={id}>
+      <h1 className='flex justify-center pt-8 Heading text-4xl pb-6 text-black'>
         Accommodation
       </h1>
       <div className='grid md:grid-cols-2 grid-cols-1 gap-2 py-10 mb-8 space-y-6 md:space-y-0 pl-4 md:pl-0'>
         <div className='flex flex-col gap-y-3'>
-          <p className='text-xl color-white text-white'>
+          <p className='text-xl color-white text-black'>
             The wedding venue has accommodation that's dependent on
             availability. Click link to have a view and book.
           </p>
@@ -20,7 +20,7 @@ const Accommodation = () => {
           </button>
         </div>
         <div className='flex flex-col gap-y-4'>
-          <p className='text-xl color-white text-white'>
+          <p className='text-xl color-white text-black'>
             Alternatively, you can book on Airbnb at any place near or
             surrounding the venue.Click link to have a view and book.
           </p>
@@ -34,7 +34,7 @@ const Accommodation = () => {
           </button>
         </div>
       </div>
-      <p className='text-xl text-white pl-4 md:pl-0'>
+      <p className='text-xl text-black pl-4 md:pl-0'>
         Kindly arrange for personal transport as there's no public transport
         available to and from the venue. There's a tollagte at N4(Donkerhoek
         Boschkop),as you off-ramp into the dirt road leading to the farm. Kindly

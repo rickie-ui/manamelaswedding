@@ -1,9 +1,12 @@
 import Timeline from '../components/Timeline';
 import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
-const Schedule = () => {
+const Schedule = ({ id }) => {
   return (
-    <div className='container-fluid w-full py-6 h-auto bg-[#312E2E] schedule-container font-medium '>
-      <div className='md:w-7/12 px-4 w-full md:px-0 mx-auto'>
+    <div
+      className='container-fluid w-full py-6 h-auto bg-[#FBF8F2] text-black font-medium '
+      id={id}
+    >
+      <div className='md:w-7/12 px-4 w-full md:px-0 mx-auto bg-[#FBF8F2]'>
         <h1 className='flex justify-center mb-4 text-4xl Heading'>Schedule</h1>
         <p className='text-xl items-centered text-3rd pb-8'>
           Kindly arrive at 13:00 pm for your convenience, a chance to know
@@ -31,7 +34,7 @@ const Schedule = () => {
             For more information, kindly contact Wedding Coordinator
           </p>
 
-          <div className=' flex justify-start contact-info text-white text-xl pt-3'>
+          <div className=' flex justify-start contact-info text-black text-xl pt-3'>
             <PersonOutlinedIcon className='' />
             &nbsp;
             <p className=' text-xl'>Bell Mpebe : 072 581 2840</p>
