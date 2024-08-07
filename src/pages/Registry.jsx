@@ -3,11 +3,17 @@ import Yuppiechef from '../components/Yuppiechef';
 
 const Registry = ({ id }) => {
   return (
-    <div className='container-fluid App text-black w-full h-full pb-5' id={id}>
-      <h1 className='flex justify-center text-3xl font-sans font-medium pt-8 registry-heading'>
-        Our Registry
+    <div
+      className='container-fluid App text-[#171511] w-full h-full pb-5'
+      id={id}
+    >
+      <h1
+        className='flex justify-center text-5xl md:text-7xl pt-8 title uppercase font-bold
+      '
+      >
+        Registry
       </h1>
-      <h2 className='pt-4 px-4 md:px-0 text-xl flex justify-center mx-auto font-medium m-10 text-wrap md:w-7/12 w-full'>
+      <h2 className='my-6 text-xl px-4 md:px-0 flex justify-center mx-auto md:w-7/12 w-full font-title'>
         Your presence is a valued gift to us! However, if you wish to gift us,
         we have compiled a registry for your convenience and made alternative
         gifting arrangements as per below. We deeply appreciate these, and other

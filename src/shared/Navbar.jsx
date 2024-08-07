@@ -42,12 +42,12 @@ const Navbar = () => {
         <h3>September 24, Pretoria East</h3>
         <h3>#AbeyWedsCarol</h3>
       </div>
-      <h3 className=' text-4xl lg:text-5xl text-center my-4 font-title'>
+      <h3 className=' text-4xl lg:text-5xl text-center my-4 title'>
         Carol & Abey
       </h3>
 
       {!isSmallDevice ? (
-        <nav className='flex w-8/12 mx-auto items-center py-6 gap-14 justify-center text-lg uppercase font-title'>
+        <nav className='flex w-8/12 mx-auto items-center py-6 gap-14 justify-center text-lg font-title'>
           <NavItem to='home'>Home</NavItem>
           <NavItem to='story'>Our Story</NavItem>
           <NavItem to='schedule'>Schedule</NavItem>

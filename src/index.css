@@ -1,76 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&family=K2D&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
- /* Define a root variable for primary color */
+/* Define a root variable for primary color */
 :root {
-    --text-color: #ffff;
-    --first-background : #0000
-    --secondbackground : #312E2E;
-    --Heading-color : #C3AC5B
-  }
-  .Heading {
-    color: var(--Heading-color);
-    padding-bottom: 3rem;
-  }
-  .accommodation {
-    background-color: var(--secondbackground);
-  }
-  .btn-primary {
-    background-color: var(--Heading-color);
-    font-weight: bold;
-    padding: 8px 18px;
-  }
-  .Acc {
-    color: #000000;
-  }
-  .schedule-container {
-    background-color: #28282B
-    ;
-  }
-  .name{
-    color: var(--Heading-color);    
-  }
-  .Footer {
-    background-color: var(--Heading-color);
-    color: var(--text-color);
-    width: full;
-  }
-  .inspiration-btn{
-    display: block;
-    margin: 0 auto;
-    margin-top: 2rem;
-  }
-  .video-responsive {
-    margin-top: 6rem;
-    position: relative;
-    padding-top: 26.25%; /* 16:9 aspect ratio */
-    height: 25rem;
-    overflow: hidden;
-    max-width: 100%;
-     /* Ensures no white space around the video */
-  }
-  
-  .video-responsive iframe {
-    position: absolute;
-    top: 0;
-    left: 25rem;
-    width: 40rem;
-    height: 30rem;
-    border: 0;
-  }
-  .registry-link img {
-    max-width: 100%;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  .registry-link img:hover {
-    transform: scale(1.05);
-  }
-  /*styling the timeline schedule*/
+  --text-color: #ffff;
+  --first-background: #0000;
+  --secondbackground: #312e2e;
+  --Heading-color: #c3ac5b;
+}
+.title {
+  font-family: 'Playfair', serif;
+}
+.Heading {
+  color: var(--Heading-color);
+  padding-bottom: 3rem;
+}
+.accommodation {
+  background-color: var(--secondbackground);
+}
+.btn-primary {
+  padding: 14px 24px;
+}
+.Acc {
+  color: #000000;
+}
+.schedule-container {
+  background-color: #28282b;
+}
+.name {
+  color: var(--Heading-color);
+}
+.Footer {
+  background-color: #000;
+  color: var(--text-color);
+  width: full;
+}
+.inspiration-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.video-responsive {
+  margin-top: 6rem;
+  position: relative;
+  padding-top: 26.25%; /* 16:9 aspect ratio */
+  height: 25rem;
+  overflow: hidden;
+  max-width: 100%;
+  /* Ensures no white space around the video */
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 25rem;
+  width: 40rem;
+  height: 30rem;
+  border: 0;
+}
+.registry-link img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.registry-link img:hover {
+  transform: scale(1.05);
+}
+/*styling the timeline schedule*/
 .timeline {
   padding: 15px;
   display: flex;
@@ -91,15 +92,14 @@
 .timeline-dot {
   width: 12px;
   height: 12px;
-  background-color: #d4b061; 
+  background-color: #d4b061;
   border-radius: 50%;
   position: absolute;
   left: -40px; /* Position dot relative to the timeline */
   top: 2;
 }
-.registry-heading{
-color: #d4b061; 
-
+.registry-heading {
+  color: #d4b061;
 }
 .timeline-line {
   width: 2px;
@@ -108,7 +108,7 @@ color: #d4b061;
   top: -20px;
   bottom: -20px;
   z-index: -1;
-  font-size:18px ;
+  font-size: 18px;
 }
 
 .timeline-time {
@@ -123,60 +123,59 @@ color: #d4b061;
   color: black;
   font-size: 16px;
   margin-left: 20px;
-  font-size:18px ;
+  font-size: 18px;
 }
 
-
-  @media screen and ( max-width : 640px) {  
-    .video-responsive {
-      margin-top: 3rem;
-      position: relative;
-      padding-top: 26.25%; /* 16:9 aspect ratio */
-      height: 18rem;
-      overflow: hidden;
-      max-width: 100%;
-      background: black; /* Ensures no white space around the video */
-    }
-    
-    .video-responsive iframe {
-      position: absolute;
-      top: 0;
-      left: 1rem;
-      width: 25rem;
-      height: 20rem;
-      border: 0;
-    }
-  .btn-acc {
-      margin-left: 6rem ;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+@media screen and (max-width: 640px) {
+  .video-responsive {
+    margin-top: 3rem;
+    position: relative;
+    padding-top: 26.25%; /* 16:9 aspect ratio */
+    height: 18rem;
+    overflow: hidden;
+    max-width: 100%;
+    background: black; /* Ensures no white space around the video */
   }
-  .btn-accom {
-    margin-left: 4rem ;
+
+  .video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    width: 25rem;
+    height: 20rem;
+    border: 0;
+  }
+  .btn-acc {
+    margin-left: 6rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-}
-.alt-para {
-  margin-left:3rem ;
-}
-
-.sched-btn {
-  margin-left: 4rem;
-  margin-top: 2rem;
-} 
-.text-2nd{
- margin-top: 2rem;
-}
-.text-3rd {
-  font-size: 1.4rem;
-}
-.timeline {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  padding-top: 4rem;
-  margin-left: 40px; /* Add margin to make space for the timeline dots and lines */
-}
   }
+  .btn-accom {
+    margin-left: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .alt-para {
+    margin-left: 3rem;
+  }
+
+  .sched-btn {
+    margin-left: 4rem;
+    margin-top: 2rem;
+  }
+  .text-2nd {
+    margin-top: 2rem;
+  }
+  .text-3rd {
+    font-size: 1.4rem;
+  }
+  .timeline {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 4rem;
+    margin-left: 40px; /* Add margin to make space for the timeline dots and lines */
+  }
+}

@@ -2,13 +2,13 @@ import { FaHeart } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <div className='container-fluid Footer w-full h-auto py-4 text-base'>
+    <div className='container-fluid Footer w-full h-auto py-5 text-base'>
       <div className='md:w-7/12 mx-auto w-full md:flex-row flex-col flex justify-between items-center'>
         <p className='copyright flex items-center'>
           &copy; 2024{' '}
           <a href='https://themanswedding.com/'>&nbsp;The MansWedding </a>
         </p>
-        <p className='flex items-center gap-x-1'>
+        <p className='flex items-center gap-x-1 text-[#FBF8F2]'>
           Developed with <FaHeart className='mx-2' /> by{' '}
           <a
             href='https://muciraerick.netlify.app/'

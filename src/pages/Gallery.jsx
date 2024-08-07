@@ -51,9 +51,11 @@ const Gallery = ({ id }) => {
       className='w-full max-w-4xl mx-auto h-screen flex flex-col justify-center items-center p-4'
       id={id}
     >
-      <h1 className='flex justify-center pt-8 Heading text-4xl'>Gallery</h1>
+      <h1 className='flex justify-center pt-8 title font-bold uppercase text-5xl md:text-7xl'>
+        Gallery
+      </h1>
       <div className="font-['Josefin_Slab']">
-        <small className='block text-center font-title -mt-10 text-black text-lg  mb-12'>
+        <small className='block text-center font-title  text-black text-lg  mb-12'>
           Capturing timeless moments of love <br />
           and tradition.
         </small>
