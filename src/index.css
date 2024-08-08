@@ -92,7 +92,7 @@
 .timeline-dot {
   width: 12px;
   height: 12px;
-  background-color: #d4b061;
+  background-color: black;
   border-radius: 50%;
   position: absolute;
   left: -40px; /* Position dot relative to the timeline */
@@ -112,7 +112,7 @@
 }
 
 .timeline-time {
-  color: #d4b061; /* Match the yellow color */
+  color: black;
   font-size: 18px;
   width: 50px;
   right: 4rem;
