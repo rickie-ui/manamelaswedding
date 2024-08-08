@@ -1,4 +1,4 @@
-import yuppiechef from "../Images/yuppiechef.png"
+import yuppiechef from "../Images/yuppiechefbanner.jpg"
 
 
 const MrPriceRegistryLink = () => {

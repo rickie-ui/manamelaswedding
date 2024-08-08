@@ -1,4 +1,4 @@
-import RegistryImage from "../Images/mrprice.png"
+import RegistryImage from "../Images/mrpricehomebanner.png"
 
 const MrPriceRegistryLink = () => {
   const registryUrl = "https://www.mrphome.com/en_za/giftregistry/view/index/id/CMWEDD9452";
