@@ -1,6 +1,7 @@
 import Timeline from '../components/Timeline';
 import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
-const Schedule = ({ id }) => {
+
+const Schedule = ({id}) => {
   return (
     <div
       className='container-fluid w-full py-6 h-auto bg-[#FBF8F2] text-black font-medium '
@@ -37,7 +38,7 @@ const Schedule = ({ id }) => {
           </p>
 
           <div className=' font-title flex justify-start contact-info text-black text-xl pt-3'>
-            <PersonOutlinedIcon className='' />
+            <PersonOutlinedIcon/>
             &nbsp;
             <p className=' text-xl'>Bell Mpebe : 072 581 2840</p>
           </div>

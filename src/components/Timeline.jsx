@@ -6,12 +6,12 @@ const Timeline = () => {
   ];
 
   return (
-    <div className='timeline font-title'>
+    <div className='timeline font-title '>
       {events.map((event, index) => (
-        <div className='timeline-event' key={index}>
+        <div className='timeline-event ' key={index}>
           <div className='timeline-dot'></div>
           {index !== events.length - 1 && <div className='timeline-line'></div>}
-          <div className='timeline-time'>{event.time}</div>
+          <div className='timeline-time text-black'>{event.time}</div>
           <div className='timeline-description'>{event.description}</div>
         </div>
       ))}
